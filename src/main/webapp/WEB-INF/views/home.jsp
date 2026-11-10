@@ -130,9 +130,7 @@
 
                       <div class="float-pill-left">
                         <div class="float-icon-lime">
-                          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                          </svg>
+                            <span class="apple-icon">🍏</span>
                         </div>
                         <div class="pill-text-group">
                           <span class="pill-text-title">Expiry monitored</span>
@@ -147,7 +145,10 @@
                       </div>
 
                       <div class="polaroid-img-wrapper">
-                        <img src="assets/hero-apple.png" alt="Fresh & Rescued organic apple produce card" />
+                          <img src="${pageContext.request.contextPath}/assets/images/apple.jpeg"
+                               width="13"
+                               height="13"
+                               alt="Apple icon">
                       </div>
 
                       <div class="polaroid-caption">
@@ -382,9 +383,6 @@
           </div>
         </div>
       </footer>
-
-    <img src="${pageContext.request.contextPath}/assets/hero-apple.png"
-         alt="Fresh and rescued apple produce card" />
 
 </body>
 </html>

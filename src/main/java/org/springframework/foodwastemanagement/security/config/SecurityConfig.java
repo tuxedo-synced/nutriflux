@@ -35,7 +35,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
                 authorizationManagerRequestMatcherRegistry
                         .requestMatchers("/home","/",LOGIN_URL,"/register").permitAll()
-                        .requestMatchers("/assets/css/**","/assets/js/**").permitAll()
+                        .requestMatchers("/assets/css/**","/assets/js/**","/assets/images/**").permitAll()
                         .dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
                         .anyRequest().authenticated()
                 )

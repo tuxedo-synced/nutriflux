@@ -32,10 +32,12 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http, OAuthServiceImple oAuthServiceImple){
-        http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
+        http
+                .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
                 authorizationManagerRequestMatcherRegistry
-                        .requestMatchers("/home","/",LOGIN_URL,"/register").permitAll()
+                        .requestMatchers("/home","/",LOGIN_URL,"/register","/process-login").permitAll()
                         .requestMatchers("/assets/css/**","/assets/js/**","/assets/images/**").permitAll()
+                        .requestMatchers("/api/v1/**").permitAll()
                         .dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
                         .anyRequest().authenticated()
                 )
@@ -50,8 +52,10 @@ public class SecurityConfig {
                                     String token = jwtService.generateToken(username);
                                     Cookie cookie = new Cookie("token", token);
                                     cookie.setHttpOnly(true);
-                                    cookie.setSecure(true);
-                                    cookie.setPath("/");
+                                    cookie.setSecure(request.isSecure());
+                                    cookie.setPath(request.getContextPath().isEmpty()
+                                            ? "/"
+                                            : request.getContextPath());
                                     cookie.setMaxAge(60 * 60);
                                     cookie.setAttribute("SameSite", "Lax");
                                     response.addCookie(cookie);

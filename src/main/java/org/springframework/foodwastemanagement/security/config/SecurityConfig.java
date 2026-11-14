@@ -68,7 +68,7 @@ public class SecurityConfig {
                         .userInfoEndpoint(userInfo -> userInfo
                                 .userService(oAuthServiceImple)
                             )
-                        .defaultSuccessUrl("/interface",true)
+                        .defaultSuccessUrl("/dashboard",true)
                         )
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();

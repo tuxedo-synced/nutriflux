@@ -45,7 +45,6 @@
         <header class="topbar">
             <div class="breadcrumbs"><span>Workspace</span><i>/</i><strong>Dashboard</strong></div>
             <div class="topbar-actions">
-                <button class="icon-button" type="button" aria-label="Notifications">♧<em></em></button>
                 <div class="top-user"><span class="avatar">AP</span><span><b>Admin</b><small>Business account</small></span><span class="chevron">⌄</span></div>
             </div>
         </header>

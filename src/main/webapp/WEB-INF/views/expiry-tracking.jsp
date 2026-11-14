@@ -76,9 +76,6 @@
             </div>
 
             <div class="top-actions">
-                <button class="bell" type="button">
-                    ♧ <span></span>
-                </button>
 
                 <div class="user">
                     <span class="avatar">

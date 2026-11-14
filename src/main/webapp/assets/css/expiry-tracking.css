@@ -247,25 +247,6 @@ button, input, select {
     gap: 22px;
 }
 
-.bell {
-    border: 0;
-    background: none;
-    color: #69776e;
-    font-size: 19px;
-    position: relative;
-    cursor: pointer;
-}
-
-.bell span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #e58c6b;
-}
-
 .user {
     gap: 10px;
 }

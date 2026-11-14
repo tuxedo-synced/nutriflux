@@ -71,9 +71,6 @@
             </div>
 
             <div class="topbar-actions">
-                <button class="icon-button" type="button" aria-label="Notifications">
-                    ♧<em></em>
-                </button>
                 <div class="top-user">
                     <span class="avatar">AP</span>
                     <span>

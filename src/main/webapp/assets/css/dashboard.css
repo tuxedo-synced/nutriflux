@@ -30,8 +30,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",san
 .breadcrumbs strong{color:#33483b}
 .topbar-actions{display:flex;align-items:center;gap:22px}
 .system-status{font-size:10px;color:#748279}
-.icon-button{position:relative;border:0;background:transparent;color:#627168;font-size:19px;cursor:pointer}
-.icon-button em{position:absolute;right:0;top:2px;width:6px;height:6px;border-radius:50%;background:#e47b58}
 .top-user{display:flex;align-items:center;gap:9px}
 .chevron{color:#9aa69e;margin-left:5px}
 .page-content{max-width:1500px;margin:0 auto;padding:32px 36px 22px}

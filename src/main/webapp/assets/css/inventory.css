@@ -201,25 +201,6 @@ body {
     gap: 22px;
 }
 
-.icon-button {
-    position: relative;
-    border: 0;
-    background: transparent;
-    color: #627168;
-    font-size: 19px;
-    cursor: pointer;
-}
-
-.icon-button em {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #e47b58;
-}
-
 .top-user {
     display: flex;
     align-items: center;

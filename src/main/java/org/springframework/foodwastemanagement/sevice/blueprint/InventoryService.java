@@ -14,4 +14,5 @@ public interface InventoryService {
     public void deleteSIngleItem(UUID id, Users user);
 
     void updateSingleItem(UUID id, InventoryDto inventoryDto , Users user);
+
 }

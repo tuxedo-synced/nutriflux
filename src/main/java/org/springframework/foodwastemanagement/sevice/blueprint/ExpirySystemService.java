@@ -13,4 +13,6 @@ public interface ExpirySystemService {
     List<Inventory> getAllData();
 
     List<Integer> getCounts(List<Inventory> allItems);
+
+
 }

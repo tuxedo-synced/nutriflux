@@ -5,8 +5,11 @@ import org.springframework.data.domain.Sort;
 import org.springframework.foodwastemanagement.entity.Inventory;
 import org.springframework.foodwastemanagement.repository.ExpirySystemRepository;
 import org.springframework.foodwastemanagement.sevice.blueprint.ExpirySystemService;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -56,5 +59,6 @@ public class ExpirySystemServiceImple implements ExpirySystemService {
         counts.add(totalCount);
         return counts;
     }
+
 
 }

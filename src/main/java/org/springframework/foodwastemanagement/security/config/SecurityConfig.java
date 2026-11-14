@@ -59,7 +59,7 @@ public class SecurityConfig {
                                     cookie.setMaxAge(60 * 60);
                                     cookie.setAttribute("SameSite", "Lax");
                                     response.addCookie(cookie);
-                                    response.sendRedirect(request.getContextPath() + "/interface");
+                                    response.sendRedirect(request.getContextPath() + "/dashboard");
                                 })
                         .permitAll()
                         )

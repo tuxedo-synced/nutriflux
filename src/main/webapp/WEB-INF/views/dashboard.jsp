@@ -12,19 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/interface.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/dashboard.css?v=20261113">
 </head>
 <body>
 <div class="app-shell">
     <aside class="sidebar">
-        <a class="brand" href="${pageContext.request.contextPath}/interface">
+        <a class="brand" href="${pageContext.request.contextPath}/dashboard">
             <span class="brand-mark">N</span>
             <span class="brand-copy"><strong>NutriFlux</strong><small>Food intelligence platform</small></span>
         </a>
 
         <div class="workspace-label">WORKSPACE</div>
         <nav class="side-nav">
-            <a class="nav-link active" href="${pageContext.request.contextPath}/interface"><span class="nav-icon">⌂</span>Dashboard</a>
+            <a class="nav-link active" href="${pageContext.request.contextPath}/dashboard"><span class="nav-icon">⌂</span>Dashboard</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/inventory"><span class="nav-icon">▤</span>Inventory</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/expiry"><span class="nav-icon">◷</span>Expiry tracking</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/surplus"><span class="nav-icon">♧</span>Surplus listings</a>
@@ -141,13 +141,6 @@
                             <div class="chart-col"><i style="height:42%"></i><small>Mon</small></div><div class="chart-col"><i style="height:62%"></i><small>Tue</small></div><div class="chart-col"><i style="height:50%"></i><small>Wed</small></div><div class="chart-col"><i style="height:78%"></i><small>Thu</small></div><div class="chart-col"><i style="height:58%"></i><small>Fri</small></div><div class="chart-col"><i style="height:90%"></i><small>Sat</small></div><div class="chart-col"><i style="height:68%"></i><small>Sun</small></div>
                         </div>
                     </div>
-                </article>
-                <article class="panel roadmap-panel">
-                    <div class="panel-heading"><div><h2>Implementation roadmap</h2><p>8-week project progress</p></div><a class="text-link" href="${pageContext.request.contextPath}/documentation">View plan ↗</a></div>
-                    <div class="roadmap-progress"><div><strong>Week 2 of 8</strong><span>25% completed</span></div><div class="progress-track"><i style="width:25%"></i></div></div>
-                    <div class="roadmap-step done"><span class="step-check">✓</span><div><b>Week 1 · Inventory foundation</b><small>Manual entry and bulk upload</small></div><span class="step-status">Complete</span></div>
-                    <div class="roadmap-step current"><span class="step-number">02</span><div><b>Week 2 · Expiry tracking</b><small>Alerts, taxonomy and barcode scan</small></div><span class="step-status">In progress</span></div>
-                    <div class="roadmap-step"><span class="step-number">03</span><div><b>Week 3 · Data preparation</b><small>Historical sales and waste data</small></div><span class="step-status">Upcoming</span></div>
                 </article>
             </section>
 

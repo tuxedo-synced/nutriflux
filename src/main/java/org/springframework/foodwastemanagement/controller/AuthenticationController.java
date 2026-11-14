@@ -38,16 +38,12 @@ public class AuthenticationController {
         List<String> erorMessages = authenticationService.checkRegisterUserDetailsValid(usersDto);
         if(erorMessages.stream().anyMatch(Objects::isNull)){
             authenticationService.addUser(usersDto);
-            return "redirect:/interface";
+            return "redirect:/dashboard";
         }else {
             model.addAttribute("errorMessages",erorMessages);
             return "register";
         }
     }
 
-    @GetMapping("/interface")
-    public String userInterface() {
-        return "interface";
-    }
 
 }

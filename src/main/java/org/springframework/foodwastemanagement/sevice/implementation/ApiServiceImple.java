@@ -2,7 +2,7 @@ package org.springframework.foodwastemanagement.sevice.implementation;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.foodwastemanagement.entity.Inventory;
+import org.springframework.foodwastemanagement.entity.present.Inventory;
 import org.springframework.foodwastemanagement.repository.InventoryRepository;
 import org.springframework.foodwastemanagement.sevice.blueprint.ApiService;
 import org.springframework.stereotype.Service;

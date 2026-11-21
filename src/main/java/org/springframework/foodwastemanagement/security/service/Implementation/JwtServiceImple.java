@@ -3,7 +3,7 @@ package org.springframework.foodwastemanagement.security.service.Implementation;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Users;
 import org.springframework.foodwastemanagement.security.service.blueprint.JwtService;
 import org.springframework.stereotype.Service;
 

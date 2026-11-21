@@ -27,6 +27,7 @@
             <a class="nav-link active" href="${pageContext.request.contextPath}/dashboard"><span class="nav-icon">⌂</span>Dashboard</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/inventory"><span class="nav-icon">▤</span>Inventory</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/expiry"><span class="nav-icon">◷</span>Expiry tracking</a>
+            <a class="nav-link" href="${pageContext.request.contextPath}/ai-prediction"><span class="nav-icon">✦</span>AI Prediction</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/surplus"><span class="nav-icon">♧</span>Surplus listings</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/marketplace"><span class="nav-icon">⇄</span>Marketplace</a>
             <a class="nav-link" href="${pageContext.request.contextPath}/analytics"><span class="nav-icon">▥</span>Impact analytics</a>

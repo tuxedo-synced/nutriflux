@@ -1,4 +1,4 @@
-package org.springframework.foodwastemanagement.entity;
+package org.springframework.foodwastemanagement.entity.present;
 
 import jakarta.persistence.*;
 import lombok.Getter;

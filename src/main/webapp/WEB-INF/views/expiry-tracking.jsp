@@ -41,6 +41,9 @@
             <a href="${pageContext.request.contextPath}/expiry" class="nav-item active">
                 <span class="nav-icon">◷</span>Expiry tracking
             </a>
+            <a href="${pageContext.request.contextPath}/ai-prediction" class="nav-item">
+                <span class="nav-icon">✦</span>AI Prediction
+            </a>
             <a href="${pageContext.request.contextPath}/surplus" class="nav-item">
                 <span class="nav-icon">♧</span>Surplus listings
             </a>

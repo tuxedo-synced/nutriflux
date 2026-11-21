@@ -1,7 +1,7 @@
 package org.springframework.foodwastemanagement.sevice.blueprint;
 
 import org.springframework.foodwastemanagement.dto.InventoryDto;
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Users;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;

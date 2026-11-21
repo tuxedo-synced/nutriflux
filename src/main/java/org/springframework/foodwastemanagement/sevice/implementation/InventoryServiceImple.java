@@ -7,13 +7,12 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.modelmapper.ModelMapper;
 import org.springframework.foodwastemanagement.dto.InventoryDto;
-import org.springframework.foodwastemanagement.entity.Inventory;
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Inventory;
+import org.springframework.foodwastemanagement.entity.present.Users;
 import org.springframework.foodwastemanagement.exception.ImportCSVError;
 import org.springframework.foodwastemanagement.helper.InventoryCategory;
 import org.springframework.foodwastemanagement.repository.InventoryRepository;
 import org.springframework.foodwastemanagement.sevice.blueprint.InventoryService;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,7 +21,6 @@ import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -66,7 +64,10 @@ public class InventoryServiceImple implements InventoryService {
                         record.get("unit")
                 );
                 inventory.setExpiryDate(
-                        LocalDate.parse(record.get("expiryDate"),DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+                        LocalDate.parse(
+                                record.get("expiryDate").trim(),
+                                DateTimeFormatter.ISO_LOCAL_DATE
+                        )
                 );
                 inventories.add(inventory);
             }

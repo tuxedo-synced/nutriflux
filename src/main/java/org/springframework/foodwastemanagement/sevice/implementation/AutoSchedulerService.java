@@ -1,7 +1,7 @@
 package org.springframework.foodwastemanagement.sevice.implementation;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.foodwastemanagement.entity.Inventory;
+import org.springframework.foodwastemanagement.entity.present.Inventory;
 import org.springframework.foodwastemanagement.helper.EmailTableData;
 import org.springframework.foodwastemanagement.repository.AutoSchedulerRepository;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -19,7 +19,7 @@ public class AutoSchedulerService {
     private final AutoSchedulerRepository autoSchedulerRepository;
     private final EmailService emailService;
 
-    @Scheduled(fixedRate = 20000)
+    @Scheduled(fixedRate = 86400000)
     public void updateScheduledValues() {
         LocalDate today = LocalDate.now();
         List<Inventory> items = autoSchedulerRepository.findAll();

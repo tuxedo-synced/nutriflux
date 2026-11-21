@@ -1,6 +1,6 @@
 package org.springframework.foodwastemanagement.security.service.blueprint;
 
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Users;
 
 public interface JwtService {
     String generateToken(String userName);

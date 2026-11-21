@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import lombok.RequiredArgsConstructor;
 
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Users;
 import org.springframework.foodwastemanagement.exception.LoginFailedException;
 import org.springframework.foodwastemanagement.security.service.blueprint.JwtService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,13 +1,11 @@
 package org.springframework.foodwastemanagement.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.eclipse.tags.shaded.org.apache.xpath.operations.Mod;
-import org.springframework.foodwastemanagement.entity.Inventory;
+import org.springframework.foodwastemanagement.entity.present.Inventory;
 import org.springframework.foodwastemanagement.sevice.blueprint.ExpirySystemService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 

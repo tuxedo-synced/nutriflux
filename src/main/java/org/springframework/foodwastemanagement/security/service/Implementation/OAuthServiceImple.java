@@ -3,7 +3,7 @@ package org.springframework.foodwastemanagement.security.service.Implementation;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.foodwastemanagement.dto.UsersDto;
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Users;
 import org.springframework.foodwastemanagement.exception.LoginFailedException;
 import org.springframework.foodwastemanagement.helper.Provider;
 import org.springframework.foodwastemanagement.helper.Role;

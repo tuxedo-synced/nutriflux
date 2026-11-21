@@ -2,7 +2,8 @@ package org.springframework.foodwastemanagement.dto;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.foodwastemanagement.entity.Users;
+import org.springframework.foodwastemanagement.entity.present.Inventory;
+import org.springframework.foodwastemanagement.entity.present.Users;
 import org.springframework.foodwastemanagement.helper.InventoryCategory;
 
 import java.time.LocalDate;
